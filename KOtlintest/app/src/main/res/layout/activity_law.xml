@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal"
+    android:id="@+id/mainLayout"
+    android:background='#FBECDB'
+    android:weightSum="100"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".LawActivity">
+
+    <androidx.constraintlayout.widget.ConstraintLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id='@+id/TextPlay'
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EE4F35"
+            android:ellipsize="end"
+            android:gravity="center"
+            android:padding="12sp"
+            android:text="Правило"
+            android:textColor="#FBECDB"
+            android:textSize="32sp"
+            app:layout_constraintBottom_toTopOf="@+id/textView4"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.29"
+            tools:ignore="HardcodedText,TextSizeCheck"></TextView>
+
+        <Button
+            android:id='@+id/buttonBack'
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="32dp"
+            android:backgroundTint="#EE4F35"
+            android:drawablePadding="12sp"
+            android:onClick='Back'
+            android:text="Назад"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            tools:ignore="HardcodedText,PxUsage,TextContrastCheck,TextContrastCheck"></Button>
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="#EE4F35"
+            android:backgroundTint="#EE4F35"
+            android:text="        В игре 5 персонажей (игровых предметов): белая барамелька, зелёная лягушка, синяя расчёска, серая ванна и красное полотенце, важно запомнить цвет и форму. \n       Есть два типа карточек, на них изображены 2 персонажа. \n       Первый (простой), на карточке один персонаж своего цвета, а другой нет, а правильный персонаж (предмет) тот, который своего цвета. \n       Второй (сложный), на карточке персонажи не своего цвета, надо методом исключения определить правильный вариант, например, на карточке синяя лягушка и серое полотенце. Лягушка есть, но она не зелёная, а синяя, следовательно, отпадает лягушка (так как она должна быть зелёного цвета) и расчёска (так как есть её цвет, но форма не та), есть полотенце, правда оно серое, следовательно, убираем его (так как оно должно быть красное) и ванну (есть её цвет, но не та форма). Получается, что по методу исключения правильный вариант – белая барамелька (так как нет её формы и цвета)"
+            android:textColor="#FBECDB"
+            android:textSize="16sp"
+            app:layout_constraintBottom_toTopOf="@+id/buttonBack"
+            app:layout_constraintEnd_toEndOf="@+id/TextPlay"
+            app:layout_constraintStart_toStartOf="@+id/TextPlay"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.792"
+            tools:ignore="HardcodedText,TextContrastCheck,TextSizeCheck" />
+    </androidx.constraintlayout.widget.ConstraintLayout>
+
+
+</RelativeLayout>
+
